@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-form">
+        <h1> Scan Badge... </h1>
+
+        <form action="{{ url_for('scan_badge') }}" method="post">
+            <input onblur="this.focus()" class="badge-input-field" type="text" id="badge-num" name="badge-num" autofocus>
+            <input class="submit-button" type="submit">
+        </form>
+
+    </div>
+
+
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function() {
+            focusOnInput();
+        })
+
+
+        function focusOnInput() {
+            var field = document.getElementById("badge-num");
+            field.focus();
+            setTimeout(function () { field.focus(); }, 1);
+        }
+    </script>
+    
+</body>
+</html>

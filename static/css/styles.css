@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-form{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.submit-button{
+    visibility: hidden;
+}
+
+.badge-input-field{
+    position: relative;
+}
+
+
+/* NEW USER FORM */
+.new-user-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.new-user-form form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hidden-field{
+    display: none;
+}
+
+/* STYLE ALERT MESSAGE */
+.message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    background-color:aquamarine;
+    width: 100vw;
+    height: 10vh;
+}
+
+.select-documents{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.select-documents form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-direction: column;
+}
+
+.export-button{
+    position: absolute;
+    bottom: 5px;
+}
