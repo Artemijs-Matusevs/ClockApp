@@ -73,7 +73,7 @@ The SQLite database (`database.db`) has 3 tables:
 2. Create a python virtual environment `python -m venv venv`
 3. Activate the env `venv/Scripts/activate`
 4. Download/Install dependencies `pip install flask flask-bcrypt flask-session`
-5. Create the database `python createDatabase.py`
+5. Create the database `python createDatabase.py`, can also run `python exampleEntries.py` this populated the database with some example documents/departments.
 6. Run the app: `flask --app index run`: Now you can see the app run on http://localhost:5000
 
 
