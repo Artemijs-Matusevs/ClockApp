@@ -71,11 +71,18 @@ The SQLite database (`database.db`) has 3 tables:
 ### Set up
 1. Clone the repository.  
 2. Create a python virtual environment `python -m venv venv`
-3. Activate the env `source venv/Scripts/activate`
-4. Download/Install dependencies `pip i flask flask-bcrypt flask-session`
+3. Activate the env `venv/Scripts/activate`
+4. Download/Install dependencies `pip install flask flask-bcrypt flask-session`
 5. Create the database `python createDatabase.py`
 6. Run the app: `flask --app index run`: Now you can see the app run on http://localhost:5000
 
 
+
+## 6. Future improvements
+- Lock scan badge input bar, so no keyboard input is valid, only input from card reader. 
+- Package the app and run as a service on a local laptop in the records, with a badge reader plugged in. 
+- Create a seperate thread, that will be scheduled to run everyday after 7pm that will check the checkins table, automatically clock users out with NULL "clock_out" time, and highlight that record red.
+- If possible to get access to database that stores employee badge numbers, the whole process of creating accounts for every new user who enters, can be removed.
+- Use environmental variables for sensitive data, like api keys or secret keys.
 
 
